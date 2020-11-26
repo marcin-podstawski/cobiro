@@ -1,0 +1,6 @@
+<ng-container *ngFor="let section of sections"
+              [ngSwitch]="section.type">
+  <app-blocks *ngSwitchCase="SectionType.BLOCKS"
+              [section]="section">
+  </app-blocks>
+</ng-container>
