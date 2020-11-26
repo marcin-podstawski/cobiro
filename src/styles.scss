@@ -1,5 +1,9 @@
 @import "~normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "variables";
 
-* {
+body {
+  font-family: "Roboto", sans-serif;
+  color: $color-normal;
   overflow-wrap: break-word;
 }
