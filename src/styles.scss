@@ -5,5 +5,23 @@
 body {
   font-family: "Roboto", sans-serif;
   color: $color-normal;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $color-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-dark;
+  margin: 0;
 }

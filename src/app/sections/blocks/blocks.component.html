@@ -1,2 +1,7 @@
-<p>Section type: {{ section.type }}</p>
-<p>Section title: {{ section.attributes.title }}</p>
+<h1 class="title">{{ section.attributes.title }}</h1>
+
+<div class="cards">
+  <app-card [card]="section.attributes.memberCards.first"></app-card>
+  <app-card [card]="section.attributes.memberCards.second"></app-card>
+  <app-card [card]="section.attributes.memberCards.third"></app-card>
+</div>

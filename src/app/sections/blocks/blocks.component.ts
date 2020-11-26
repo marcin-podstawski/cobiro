@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { BlocksSection } from '@model/section/types/blocks';
 
@@ -7,11 +7,8 @@ import { BlocksSection } from '@model/section/types/blocks';
   templateUrl: './blocks.component.html',
   styleUrls: ['./blocks.component.scss']
 })
-export class BlocksComponent implements OnInit {
+export class BlocksComponent {
   @Input() section!: BlocksSection;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 }

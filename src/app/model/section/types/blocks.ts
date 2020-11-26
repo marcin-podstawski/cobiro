@@ -1,4 +1,5 @@
 import { Section, SectionData } from '../section';
+import { Card } from './card';
 
 export class BlocksSection extends Section {
   attributes: BlocksSectionAttributes;
@@ -13,25 +14,8 @@ export class BlocksSection extends Section {
 export interface BlocksSectionAttributes {
   title: string;
   memberCards: {
-    first: BlocksSectionMemberCard;
-    second: BlocksSectionMemberCard;
-    third: BlocksSectionMemberCard;
-  };
-}
-
-export interface BlocksSectionMemberCard {
-  imageUrl: {
-    w200: string;
-    w400: string;
-    w1080: string;
-    w1920: string;
-    w2560: string;
-  };
-
-  block: {
-    title: string;
-    description: string;
-    link: string;
-    text: string;
+    first: Card;
+    second: Card;
+    third: Card;
   };
 }
